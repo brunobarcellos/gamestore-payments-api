@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: payments-api-config
+  labels:
+    app: payments-api
+data:
+  ASPNETCORE_ENVIRONMENT: "Production"
+  ASPNETCORE_HTTP_PORTS: "8080"
+  RabbitMq__Host: "rabbitmq"
+  RabbitMq__Port: "5672"
+  RabbitMq__VirtualHost: "/"
+  RabbitMq__Queues__OrderPlace: "OrderPlaceEvent"
+  RabbitMq__Queues__PaymentProcessed: "PaymentProcessedEvent"
+  Services__UserApiUrl: "http://user-api:80"
+  Services__CatalogApiUrl: "http://catalog-api:80"
+  Services__PaymentsApiUrl: "http://payments-api:80"
+  Services__NotificationsApiUrl: "http://notifications-api:80"
+

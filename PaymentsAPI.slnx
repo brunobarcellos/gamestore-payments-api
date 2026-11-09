@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/GameStore.Payments.Api/GameStore.Payments.Api.csproj" />
+    <Project Path="src/GameStore.Payments.Application/GameStore.Payments.Application.csproj" />
+    <Project Path="src/GameStore.Payments.Domain/GameStore.Payments.Domain.csproj" />
+    <Project Path="src/GameStore.Payments.Infrastructure/GameStore.Payments.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/GameStore.Payments.Tests/GameStore.Payments.Tests.csproj" />
+  </Folder>
+</Solution>
+
